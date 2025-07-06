@@ -21,15 +21,34 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.cool-button {
+  padding: 0.5rem 1.5rem;
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  cursor: pointer;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.cool-button:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.cool-button:focus {
+  box-shadow: 0 0 0 4px rgba(147, 197, 253, 0.6); /* ring-2 ring-blue-400 */
+}
+
+
+.green-border {
+  border: 2px solid #34d399; /* green-500 */
+}
+
+input:focus {
+  outline: none;
+  border: none ; /* optional – removes border if one is applied */
+  box-shadow: none; /* removes glow on some browsers */
 }
